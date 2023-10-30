@@ -11,7 +11,7 @@ import lombok.RequiredArgsConstructor;
 @WebService
 @RequiredArgsConstructor
 public class SpaceWebServiceImpl implements AddSpaceWebService {
-    private AddSpaceUseCase addSpaceUseCase;
+    private final AddSpaceUseCase addSpaceUseCase;
 
     @Override
     public void addSpace(AddSpaceDto addSpaceDto) {
